@@ -1,0 +1,8 @@
+D:\Workspaces\vs\RePoint\RePoint\bin\Debug\RePoint.exe
+D:\Workspaces\vs\RePoint\RePoint\bin\Debug\RePoint.pdb
+D:\Workspaces\vs\RePoint\RePoint\obj\x86\Debug\RePoint.Form1.resources
+D:\Workspaces\vs\RePoint\RePoint\obj\x86\Debug\RePoint.Properties.Resources.resources
+D:\Workspaces\vs\RePoint\RePoint\obj\x86\Debug\RePoint.csproj.GenerateResource.Cache
+D:\Workspaces\vs\RePoint\RePoint\obj\x86\Debug\RePoint.exe
+D:\Workspaces\vs\RePoint\RePoint\obj\x86\Debug\RePoint.pdb
+D:\Workspaces\vs\RePoint\RePoint\obj\x86\Debug\RePoint.csprojResolveAssemblyReference.cache
