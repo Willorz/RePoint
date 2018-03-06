@@ -35,6 +35,10 @@
             this.ratio_tb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.trans_btn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.move_x_tb = new System.Windows.Forms.TextBox();
+            this.move_y_tb = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // readpath_tb
@@ -71,7 +75,7 @@
             // 
             // ratio_tb
             // 
-            this.ratio_tb.Location = new System.Drawing.Point(163, 165);
+            this.ratio_tb.Location = new System.Drawing.Point(163, 143);
             this.ratio_tb.Name = "ratio_tb";
             this.ratio_tb.Size = new System.Drawing.Size(101, 21);
             this.ratio_tb.TabIndex = 0;
@@ -80,7 +84,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(97, 174);
+            this.label3.Location = new System.Drawing.Point(97, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 1;
@@ -96,20 +100,56 @@
             this.trans_btn.UseVisualStyleBackColor = true;
             this.trans_btn.Click += new System.EventHandler(this.trans_btn_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(97, 187);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 12);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "偏移X轴";
+            // 
+            // move_x_tb
+            // 
+            this.move_x_tb.Location = new System.Drawing.Point(163, 184);
+            this.move_x_tb.Name = "move_x_tb";
+            this.move_x_tb.Size = new System.Drawing.Size(101, 21);
+            this.move_x_tb.TabIndex = 0;
+            // 
+            // move_y_tb
+            // 
+            this.move_y_tb.Location = new System.Drawing.Point(370, 187);
+            this.move_y_tb.Name = "move_y_tb";
+            this.move_y_tb.Size = new System.Drawing.Size(101, 21);
+            this.move_y_tb.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(304, 190);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 12);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "偏移Y轴";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 274);
             this.Controls.Add(this.trans_btn);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.move_y_tb);
+            this.Controls.Add(this.move_x_tb);
             this.Controls.Add(this.ratio_tb);
             this.Controls.Add(this.savepath_tb);
             this.Controls.Add(this.readpath_tb);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "素材坐标批量缩放平移";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +164,10 @@
         private System.Windows.Forms.TextBox ratio_tb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button trans_btn;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox move_x_tb;
+        private System.Windows.Forms.TextBox move_y_tb;
+        private System.Windows.Forms.Label label5;
     }
 }
 

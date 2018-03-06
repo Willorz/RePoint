@@ -15,6 +15,9 @@ namespace RePoint
 
         public static string readpath, savepath;
         public static double ratio;
+        public static int move_x, move_y;
+
+
 
         public Form1()
         {
@@ -26,6 +29,9 @@ namespace RePoint
             readpath = readpath_tb.Text;
             savepath = savepath_tb.Text;
             ratio = double.Parse(ratio_tb.Text);
+
+            move_x = Int32.Parse(move_x_tb.Text);
+            move_y = Int32.Parse(move_y_tb.Text);
 
             string text = ReadTxt(readpath);
 
@@ -46,6 +52,9 @@ namespace RePoint
 
         private static string ReadTxt(string path)
         {
+
+            
+             int i = 2;
             StringBuilder text = new StringBuilder();
             string temp = string.Empty;
             DirectoryInfo folder = new DirectoryInfo(path);
@@ -57,9 +66,23 @@ namespace RePoint
                 {
                     while (sr.Peek() > 0)
                     {
-                        temp = sr.ReadLine();
-                        temp=Math.Floor(Int32.Parse(temp)*ratio)+"";
-                        text.AppendLine(temp);
+
+
+                        if (i % 2 == 0)
+                        {
+                            temp = sr.ReadLine();
+                            temp = Math.Floor(Int32.Parse(temp) * ratio+move_x) + "";
+                            text.AppendLine(temp);
+                            i++;
+                        }
+                        else
+                        {
+                            temp = sr.ReadLine();
+                            temp = Math.Floor(Int32.Parse(temp) * ratio+move_y) + "";
+                            text.AppendLine(temp);
+                            i++;
+                        }
+
                        
                     }
                 }
